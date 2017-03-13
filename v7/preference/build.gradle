@@ -22,6 +22,8 @@ dependencies {
     compile project(':support-v4')
     compile project(':support-appcompat-v7')
     compile project(':support-recyclerview-v7')
+    androidTestCompile libs.mockito_core
+    androidTestCompile libs.dexmaker_mockito
 }
 
 android {
