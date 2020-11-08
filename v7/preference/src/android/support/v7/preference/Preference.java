@@ -89,7 +89,6 @@ public class Preference implements Comparable<Preference> {
 
     private Context mContext;
 
-    @Nullable
     private PreferenceManager mPreferenceManager;
 
     /**
@@ -97,7 +96,6 @@ public class Preference implements Comparable<Preference> {
      * {@link PreferenceManager#getPreferenceDataStore()} needs to be checked. If that one is null
      * too it means that we are using {@link android.content.SharedPreferences} to store the data.
      */
-    @Nullable
     private PreferenceDataStore mPreferenceDataStore;
 
     /**
@@ -432,7 +430,6 @@ public class Preference implements Comparable<Preference> {
      *
      * @return the {@link PreferenceDataStore} used by this Preference or {@code null} if none
      */
-    @Nullable
     public PreferenceDataStore getPreferenceDataStore() {
         if (mPreferenceDataStore != null) {
             return mPreferenceDataStore;
